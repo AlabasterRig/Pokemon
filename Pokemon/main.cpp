@@ -1,9 +1,17 @@
 #include <iostream>
 using namespace std;
 
+enum PokemonChoice
+{
+	Bulbasaur,
+	Charmander,
+	Squirtle,
+	Pikachu
+};
+
 int main() {
 
-	cout << "Professor Oak: Hello there! Welcome to the world of Pokémon!\n";
+	cout << "Professor Oak: Hello there! Welcome to the world of Pokemon!\n";
 	cout << "What's your name?" << endl;
 
     string PlayerName;
@@ -22,40 +30,82 @@ int main() {
 
 	int choice;
 	cin >> choice;
-	string ChosenPokemon;
+	PokemonChoice ChosenPokemon;
 
 	switch (choice) 
 	{
 	case 1:
-		cout << "Professor Oak: Well done, Trainer!" << endl;
-		cout << "Professor Oak: You chose Bulbasaur! It is a Grass/Poison type Pokemon.\n";
-		ChosenPokemon = "Bulbasaur";
-		cout << "Professor Oak: Ah, an excellent choice!" << endl;
+		ChosenPokemon = Bulbasaur;
 		break;
+
 	case 2:
-		cout << "Professor Oak: Well done, Trainer!" << endl;
-		cout << "Professor Oak: You chose Charmander! It is a Fire type Pokemon.\n";
-		ChosenPokemon = "Charmander";
-		cout << "Professor Oak: Ah, an excellent choice!" << endl;
+		ChosenPokemon = Charmander;
 		break;
+
 	case 3:
-		cout << "Professor Oak: Well done, Trainer!" << endl;
-		cout << "Professor Oak: You chose Squirtle! It is a Water type Pokemon.\n";
-		ChosenPokemon = "Squirtle";
-		cout << "Professor Oak: Ah, an excellent choice!" << endl;
+		ChosenPokemon = Squirtle;
 		break;
+
 	default:
-		cout << "Professor Oak: Hmm... I think you dont want any of these, how about I give you a unique one?" << endl;
-		ChosenPokemon = "Pikachu";
-		cout << "Professor Oak: Now this is a special one, it's an Electric type Pokemon,\n";
-		cout << "Professor Oak: a bit of a troublemaker as it never goes back into the Pokeball\n";
-		cout << "Professor Oak: It's name is Pikachu!" << endl;
-		cout << "Professor Oak: I hope you like it!" << endl;
+		cout << "Professor Oak: Hmm... I think you dont want any of these, how about I give you one of my choice?" << endl;
+		ChosenPokemon = Pikachu;
 		break;
 	}
 
-	cout << "Professor Oak: But beware, Trainer,"  << endl;
-	cout << "Professor Oak: this is only the beginning."  << endl;
+	switch (ChosenPokemon)
+	{
+		case Bulbasaur:
+			cout << "Professor Oak: Well done, " << PlayerName << "!" << endl;
+			cout << "Professor Oak: You chose Bulbasaur! It is a Grass/Poison type Pokemon.\n";
+			cout << "Professor Oak: An excellent choice!" << endl;
+			cout << "Professor Oak: It evolves into Ivysaur at level 16.\n";
+			cout << "Professor Oak: And then into Venusaur at level 32.\n";
+			break;
+
+		case Charmander:
+			cout << "Professor Oak: Well done, " << PlayerName << "!" << endl;
+			cout << "Professor Oak: You chose Charmander! It is a Fire type Pokemon.\n";
+			cout << "Professor Oak: An excellent choice!" << endl;
+			cout << "Professor Oak: It evolves into Charmeleon at level 16.\n";
+			cout << "Professor Oak: And then into Charizard at level 36.\n";
+			break;
+
+		case Squirtle:
+			cout << "Professor Oak: Well done, " << PlayerName << "!" << endl;
+			cout << "Professor Oak: You chose Squirtle! It is a Water type Pokemon.\n";
+			cout << "Professor Oak: An excellent choice!" << endl;
+			cout << "Professor Oak: It evolves into Wartortle at level 16.\n";
+			cout << "Professor Oak: And then into Blastoise at level 36.\n";
+			break;
+
+		case Pikachu:
+			cout << "Professor Oak: Now this is a special one, it's an Electric type Pokemon,\n";
+			cout << "Professor Oak: a bit of a troublemaker as it never goes back into the Pokeball\n";
+			cout << "Professor Oak: It's name is Pikachu!" << endl;
+			cout << "Professor Oak: I hope you like it!" << endl;
+			break;
+	}
+
+	string PokemonName;
+
+	switch (ChosenPokemon)
+	{
+		case Bulbasaur:
+			PokemonName = "Bulbasaur";
+			break;
+		case Charmander:
+			PokemonName = "Charmander";
+			break;
+		case Squirtle :
+			PokemonName = "Squirtle";
+			break;
+		case Pikachu:
+			PokemonName = "Pikachu";
+			break;
+	}
+
+	cout << "Professor Oak: But make no mistake, " << PlayerName << ", this is only the beginning."  << endl;
+	cout << "Professor Oak: The bond between you and " << PokemonName << " will grow stronger with each battle." << endl;
 	cout << "Professor Oak: Your journey is about to unfold."  << endl;
 	cout << "Professor Oak: Now let's see if you’ve got what it takes to keep going!" << endl;
 	cout << "Professor Oak: Good luck!" << endl;
