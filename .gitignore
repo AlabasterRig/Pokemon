@@ -31,5 +31,24 @@
 *.out
 *.app
 
-# Visual Studio
-*.vs
+# Ignore Visual Studio Temp Files
+.vs/
+x64/
+Debug/
+Release/
+*.obj
+*.pdb
+*.idb
+*.ilk
+*.ipch
+*.exp
+*.log
+*.tlog
+*.sdf
+*.opensdf
+*.VC.db
+*.cache
+*.user
+*.aps
+*.ncb
+*.suo
