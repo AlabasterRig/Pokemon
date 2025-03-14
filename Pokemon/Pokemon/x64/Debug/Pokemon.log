@@ -1,54 +1,39 @@
 ﻿  main.cpp
-C:\Users\utkri\source\repos\Pokemon\Pokemon\EPokemonType.hpp(1,12): error C2011: 'PokemonType': 'enum' type redefinition
-  (compiling source file 'main.cpp')
-      C:\Users\utkri\source\repos\Pokemon\Pokemon\EPokemonType.hpp(1,12):
-      see declaration of 'PokemonType'
-  
-C:\Users\utkri\source\repos\Pokemon\Pokemon\EPokemonChoice.hpp(1,12): error C2011: 'PokemonChoice': 'enum' type redefinition
-  (compiling source file 'main.cpp')
-      C:\Users\utkri\source\repos\Pokemon\Pokemon\EPokemonChoice.hpp(1,12):
-      see declaration of 'PokemonChoice'
-  
-C:\Users\utkri\source\repos\Pokemon\Pokemon\main.cpp(234,42): error C2027: use of undefined type 'PokemonType'
-      C:\Users\utkri\source\repos\Pokemon\Pokemon\EPokemonType.hpp(1,12):
-      see declaration of 'PokemonType'
-  
-C:\Users\utkri\source\repos\Pokemon\Pokemon\main.cpp(234,42): error C2065: 'Electric': undeclared identifier
   Player.cpp
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(10,10): error C3646: 'ChosenPokemon': unknown override specifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(8,10): error C3646: 'ChosenPokemon': unknown override specifier
   (compiling source file 'Player.cpp')
   
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(10,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(8,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
   (compiling source file 'Player.cpp')
   
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(17,27): error C2061: syntax error: identifier 'Pokemon'
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(15,27): error C2061: syntax error: identifier 'Pokemon'
   (compiling source file 'Player.cpp')
   
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(6,9): error C2084: function 'Player::Player(void)' already has a body
-      C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(12,2):
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(8,9): error C2084: function 'Player::Player(void)' already has a body
+      C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(10,2):
       see previous definition of 'Player::Player'
   
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(8,2): error C2065: 'ChosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(8,18): error C3861: 'Pokemon': identifier not found
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(11,34): error C2061: syntax error: identifier 'Pokemon'
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(14,2): error C2065: 'ChosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(14,18): error C2065: 'chosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(20,2): error C2065: 'ChosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(20,24): error C2039: 'ChosenPokemon': is not a member of 'Player'
-      C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(6,7):
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(10,2): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(10,18): error C3861: 'Pokemon': identifier not found
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(13,34): error C2061: syntax error: identifier 'Pokemon'
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(16,2): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(16,18): error C2065: 'chosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(22,2): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(22,24): error C2039: 'ChosenPokemon': is not a member of 'Player'
+      C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(4,7):
       see declaration of 'Player'
   
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(28,3): error C2065: 'ChosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(28,19): error C3861: 'Pokemon': identifier not found
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(31,3): error C2065: 'ChosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(31,19): error C3861: 'Pokemon': identifier not found
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(34,3): error C2065: 'ChosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(34,19): error C3861: 'Pokemon': identifier not found
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(37,3): error C2065: 'ChosenPokemon': undeclared identifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(37,19): error C3861: 'Pokemon': identifier not found
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(41,40): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(30,3): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(30,19): error C3861: 'Pokemon': identifier not found
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(33,3): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(33,19): error C3861: 'Pokemon': identifier not found
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(36,3): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(36,19): error C3861: 'Pokemon': identifier not found
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(39,3): error C2065: 'ChosenPokemon': undeclared identifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(39,19): error C3861: 'Pokemon': identifier not found
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.cpp(43,40): error C2065: 'ChosenPokemon': undeclared identifier
   Player.hpp
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(10,10): error C3646: 'ChosenPokemon': unknown override specifier
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(10,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(17,27): error C2061: syntax error: identifier 'Pokemon'
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(8,10): error C3646: 'ChosenPokemon': unknown override specifier
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(8,2): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\utkri\source\repos\Pokemon\Pokemon\Player.hpp(15,27): error C2061: syntax error: identifier 'Pokemon'
   Generating Code...

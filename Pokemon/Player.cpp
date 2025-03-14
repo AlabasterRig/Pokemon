@@ -1,6 +1,8 @@
 #include "Player.hpp"
 #include <iostream>
 #include "Utility.hpp"
+#include "EPokemonType.hpp"
+#include "EPokemonChoice.hpp"
 
 
 Player::Player() {

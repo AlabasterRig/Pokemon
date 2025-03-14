@@ -1,6 +1,4 @@
 #include <string>
-#include "EPokemonType.hpp"
-#include "EPokemonChoice.hpp"
 using namespace std;
 
 class Player
