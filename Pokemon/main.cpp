@@ -1,23 +1,8 @@
 #include <iostream>
+#include <string>
+#include "EPokemonChoice.hpp"
+#include "EPokemonType.hpp"
 using namespace std;
-
-enum class PokemonChoice
-{
-	Bulbasaur,
-	Charmander,
-	Squirtle,
-	Pikachu
-};
-
-enum class PokemonType
-{
-	Grass,
-	Fire,
-	Water,
-	Electric,
-	Earth,
-	Normal
-};
 
 void ClearConsole() 
 {
@@ -252,7 +237,7 @@ void GameLoop(Player& player)
 	}
 }
 
-int main() 
+int main()
 {
 	Player player;
 	ProfessorOak professorOak;
@@ -265,5 +250,5 @@ int main()
 
 	GameLoop(player);
 
-    return 0;
-#include "header.hpp"
+	return 0;
+}

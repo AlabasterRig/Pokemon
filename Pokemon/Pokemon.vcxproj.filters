@@ -20,7 +20,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="header.hpp">
+    <ClInclude Include="EPokemonType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EPokemonChoice.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
