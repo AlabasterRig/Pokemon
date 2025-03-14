@@ -1,12 +1,21 @@
 #include <iostream>
 using namespace std;
 
-enum PokemonChoice
+enum class PokemonChoice
 {
 	Bulbasaur,
 	Charmander,
 	Squirtle,
 	Pikachu
+};
+
+enum class PokemonType
+{
+	Grass,
+	Fire,
+	Water,
+	Electric,
+	Earth
 };
 
 int main() {
@@ -35,26 +44,26 @@ int main() {
 	switch (choice) 
 	{
 	case 1:
-		ChosenPokemon = Bulbasaur;
+		ChosenPokemon = PokemonChoice::Bulbasaur;
 		break;
 
 	case 2:
-		ChosenPokemon = Charmander;
+		ChosenPokemon = PokemonChoice::Charmander;
 		break;
 
 	case 3:
-		ChosenPokemon = Squirtle;
+		ChosenPokemon = PokemonChoice::Squirtle;
 		break;
 
 	default:
 		cout << "Professor Oak: Hmm... I think you dont want any of these, how about I give you one of my choice?" << endl;
-		ChosenPokemon = Pikachu;
+		ChosenPokemon = PokemonChoice::Pikachu;
 		break;
 	}
 
 	switch (ChosenPokemon)
 	{
-		case Bulbasaur:
+	case PokemonChoice::Bulbasaur:
 			cout << "Professor Oak: Well done, " << PlayerName << "!" << endl;
 			cout << "Professor Oak: You chose Bulbasaur! It is a Grass/Poison type Pokemon.\n";
 			cout << "Professor Oak: An excellent choice!" << endl;
@@ -62,7 +71,7 @@ int main() {
 			cout << "Professor Oak: And then into Venusaur at level 32.\n";
 			break;
 
-		case Charmander:
+	case PokemonChoice::Charmander:
 			cout << "Professor Oak: Well done, " << PlayerName << "!" << endl;
 			cout << "Professor Oak: You chose Charmander! It is a Fire type Pokemon.\n";
 			cout << "Professor Oak: An excellent choice!" << endl;
@@ -70,7 +79,7 @@ int main() {
 			cout << "Professor Oak: And then into Charizard at level 36.\n";
 			break;
 
-		case Squirtle:
+		case PokemonChoice::Squirtle:
 			cout << "Professor Oak: Well done, " << PlayerName << "!" << endl;
 			cout << "Professor Oak: You chose Squirtle! It is a Water type Pokemon.\n";
 			cout << "Professor Oak: An excellent choice!" << endl;
@@ -78,7 +87,7 @@ int main() {
 			cout << "Professor Oak: And then into Blastoise at level 36.\n";
 			break;
 
-		case Pikachu:
+		case PokemonChoice::Pikachu:
 			cout << "Professor Oak: Now this is a special one, it's an Electric type Pokemon,\n";
 			cout << "Professor Oak: a bit of a troublemaker as it never goes back into the Pokeball\n";
 			cout << "Professor Oak: It's name is Pikachu!" << endl;
@@ -90,16 +99,16 @@ int main() {
 
 	switch (ChosenPokemon)
 	{
-		case Bulbasaur:
+		case PokemonChoice::Bulbasaur:
 			PokemonName = "Bulbasaur";
 			break;
-		case Charmander:
+		case PokemonChoice::Charmander:
 			PokemonName = "Charmander";
 			break;
-		case Squirtle :
+		case PokemonChoice::Squirtle :
 			PokemonName = "Squirtle";
 			break;
-		case Pikachu:
+		case PokemonChoice::Pikachu:
 			PokemonName = "Pikachu";
 			break;
 	}
