@@ -18,12 +18,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EPokemonType.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EPokemonChoice.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

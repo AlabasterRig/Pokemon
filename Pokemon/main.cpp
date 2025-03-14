@@ -1,22 +1,10 @@
 #include <iostream>
 #include <string>
+#include <limits>
 #include "EPokemonChoice.hpp"
 #include "EPokemonType.hpp"
+#include "Utility.hpp"
 using namespace std;
-
-void ClearConsole() 
-{
-#ifdef _WIN32
-	system("cls");
-#else
-	(void)system("clear");
-#endif
-}
-
-void WaitForEnter()
-{
-	cin.get();
-}
 
 class Pokemon
 {
@@ -108,9 +96,9 @@ public:
 	void GreetPlayer(Player& player)
 	{
 		cout << "Professor Oak: Hello there! Welcome to the world of Pokemon!\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: I am Professor Oak.\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 	}
 
 	void OfferPokemon(Player& player)
@@ -120,17 +108,17 @@ public:
 		cin >> player.Name;
 
 		cout << "Professor Oak: Ah, so your name is " << player.Name << "! A fine name indeed.\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: In this vast world, Pokemon and humans live side by side, forging friendships and facing challenges together.\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: Some people raise Pokemon as loyal companions, while others test their skills in thrilling battles.\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: As for me, I’ve dedicated my life to studying these incredible creatures!\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: But enough about me-let's talk about you. Do you dream of becoming a Pokemon Trainer?\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: If so, you'll need a partner to begin your journey.\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: Here, you may choose one of these three Pokemon to accompany you:\n";
 		cout << "1. Bulbasaur - A Grass-type with a calm and steady nature.\n";
 		cout << "2. Charmander - A fiery and determined Fire-type.\n";
@@ -145,35 +133,35 @@ public:
 
 	void ExplainMainQuest(Player& player)
 	{
-		ClearConsole();
+		Utility::ClearConsole();
 		cout << "Professor Oak: Congratulations, " << player.Name << "! You've chosen " << player.ChosenPokemon.Name << "!" << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: But make no mistake, " << player.Name << ", this is only the beginning." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: Oak - ay " << player.Name << ", I am about to explain you about your upcoming grand adventure." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: You see, becoming a Pokemon Master is no easy feat. It takes courage, wisdom, and a bit of luck." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: Your mission, should you choose to accept it (and trust me, you really don’t have a choice) is to collect all the Pokemon Badges and conquer the Pokemon League." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << player.Name << ": Wait... that sounds a lot like every other Pokemon game out there." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: Shhh! Don't break the fourth wall" << player.Name << "! This is serious business." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: To achieve this, you'll need to battle wild Pokemon, challenge gym leaders, and of course, keep your Pokemon healthy at the PokeCenter." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: Along the way, you'll capture new Pokemon to strengthen your team. Just remember—there's a limit to how many Pokemon you can carry, so choose wisely!" << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << player.Name << ": Sounds like a walk in the park... right?" << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: Hah! That's what they all say! But beware, young Trainer, the path to victory is fraught with challenges. And if you lose a battle... well, let's just say you'll be starting from square one." << endl;
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: So, what do you say? Are you ready to become the next Pokemon Champion?\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << player.Name << ": Ready as I'll ever be, Professor!\n";
-		WaitForEnter();
+		Utility::WaitForEnter();
 		cout << "Professor Oak: That's the spirit! Now, your journey begins.";
-		WaitForEnter();
+		Utility::WaitForEnter();
 	}
 };
 
@@ -184,42 +172,44 @@ void GameLoop(Player& player)
 
 	while (KeepPlaying)
 	{
-		ClearConsole();
+		Utility::ClearConsole();
 		cout << "System: What would you like to do next?\n";
 		cout << "1. Battle a wild Pokemon\n";
 		cout << "2. Visit the PokeCenter\n";
-		cout << "3. Challenge Gyms";
-		cout << "4. Enter Pokemon League";
+		cout << "3. Challenge Gyms\n";
+		cout << "4. Enter Pokemon League\n";
 		cout << "5. Exit the game\n";
-		cout << "System: Enter the number of your choice: ";
+		cout << "System: Enter the number of your choice: \n";
 		cin >> choice;
+
+		Utility::ClearInputBuffer();
 		
 		switch (choice)
 		{
 		case 1:
 			cout << "System: You look around... but all the wild Pokemon are on vacation.Maybe try again later? \\n";
-			WaitForEnter();
+			Utility::WaitForEnter();
 			break;
 
 		case 2:
 			cout << "System: You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!\\n";;
-			WaitForEnter();
+			Utility::WaitForEnter();
 			break;
 
 		case 3:
 			cout << "System: You march up to the Gym, but it's closed for renovations. Seems like even Gym Leaders need a break!\\n";
-			WaitForEnter();
+			Utility::WaitForEnter();
 			break;
 			
 		case 4:
 			cout << "System: You boldly step towards the Pokemon League... but the gatekeeper laughs and says, 'Maybe next time, champ!'\\n";
-			WaitForEnter();
+			Utility::WaitForEnter();
 			break;
 		
 		case 5:
-			cout << "System: You try to quit, but Professor Oak's voice echoes: 'There's no quitting in Pokemon training!'\\n";
+			cout << "System: You try to quit, but Professor Oak's voice echoes: 'There's no quitting in Pokemon training!'\n";
 			char QuitChoice;
-			cout << "System: Are you sure you want to quit? (Y/N): ";
+			cout << "System: Are you sure you want to quit? (Y/N): \n";
 			cin >> QuitChoice;
 			if (QuitChoice == 'Y' || QuitChoice == 'y')
 			{
@@ -229,11 +219,11 @@ void GameLoop(Player& player)
 			
 		default:
 			cout << "System: Invalid choice. Please try again.\\n";
-			WaitForEnter();
+			Utility::WaitForEnter();
 			break;
 		}
 
-		WaitForEnter();
+		Utility::WaitForEnter();
 	}
 }
 
