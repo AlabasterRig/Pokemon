@@ -3,7 +3,6 @@
 #include <limits>
 #include "EPokemonChoice.hpp"
 #include "EPokemonType.hpp"
-#include "Player.hpp"
 #include "Utility.hpp"
 using namespace std;
 
@@ -44,6 +43,8 @@ public:
 		cout << "Pokemon is attacking!" << endl;
 	}
 };
+
+#include "Player.hpp"
 
 //class Player
 //{
@@ -230,7 +231,8 @@ void GameLoop(Player& player)
 
 int main()
 {
-	Player player;
+	Pokemon pokemon("Pikachu", PokemonType::Electric, 100);
+	Player player("Trainer", pokemon);
 	ProfessorOak professorOak;
 
 	professorOak.Name = "Professor Oak";
