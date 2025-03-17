@@ -161,6 +161,8 @@
     <ClCompile Include="Pokemon.cpp" />
     <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="WildEncounterManager.cpp" />
+    <ClCompile Include="WildEncounterManager.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />

@@ -1,7 +1,13 @@
+#include "FGrass.hpp"
+
 class Player;
 
 class Game
 {
+private: 
+	Grass ForestGrass;
+	Grass CaveGrass;
+
 public:
 
 	Game();

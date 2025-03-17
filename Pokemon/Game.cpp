@@ -2,12 +2,24 @@
 #include "Player.hpp"
 #include <iostream>
 #include "Utility.hpp"
-#include "FGrass.hpp"
 #include "EPokemonType.hpp"
+#include "WildEncounterManager.hpp"
 using namespace std;
+
+WildEncounterManager encounterManager;
 
 Game::Game()
 {
+	ForestGrass = {
+		{{"Pidgey", PokemonType::Normal, 40}, {"Caterpie", PokemonType::Bug, 35}},
+		80,
+		"Forest"
+	};
+	CaveGrass = {
+		{{"Zubat", PokemonType::Poison, 40}, {"Geodude", PokemonType::Earth, 35}},
+		80,
+		"Cave"
+	};
 }
 
 void Game::GameLoop(Player& player)
@@ -32,23 +44,22 @@ void Game::GameLoop(Player& player)
 		switch (choice)
 		{
 		case 1:
-			cout << "System: You look around... but all the wild Pokemon are on vacation.Maybe try again later? \n";
-			Utility::WaitForEnter();
+		{
+			Pokemon wildPokemon = encounterManager.GetRandomPokemonFromGrass(ForestGrass);
+			cout << "A wild " << wildPokemon.Name << " appeared!\n";
 			break;
+		}
 
 		case 2:
-			cout << "System: You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!\n";;
-			Utility::WaitForEnter();
+			cout << "System: You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!\n";
 			break;
 
 		case 3:
 			cout << "System: You march up to the Gym, but it's closed for renovations. Seems like even Gym Leaders need a break!\n";
-			Utility::WaitForEnter();
 			break;
 
 		case 4:
 			cout << "System: You boldly step towards the Pokemon League... but the gatekeeper laughs and says, 'Maybe next time, champ!'\n";
-			Utility::WaitForEnter();
 			break;
 
 		case 5:
@@ -63,8 +74,7 @@ void Game::GameLoop(Player& player)
 			break;
 
 		default:
-			cout << "System: Invalid choice. Please try again.\\n";
-			Utility::WaitForEnter();
+			cout << "System: Invalid choice. Please try again.\n";
 			break;
 		}
 
