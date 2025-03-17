@@ -1,6 +1,6 @@
 enum class PokemonChoice
 {
-	Bulbasaur,
+	Bulbasaur = 1,
 	Charmander,
 	Squirtle,
 	Pikachu

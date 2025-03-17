@@ -1,12 +1,13 @@
 #include "Pokemon.hpp"
 #include <string>
 #include <iostream>
+#include "EPokemonType.hpp"
 using namespace std;
 
 Pokemon::Pokemon()
 {
-	Name = "Pikachu";
-	Type = PokemonType::Electric;
+	Name = "Unknown";
+	Type = PokemonType::Normal;
 	Health = 100;
 }
 

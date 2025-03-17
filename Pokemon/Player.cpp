@@ -17,23 +17,17 @@ Player::Player(string name, Pokemon chosenPokemon)
 	ChosenPokemon = chosenPokemon;
 }
 
-Player::Player(const Player& other)
-{
-	Name = other.Name;
-	ChosenPokemon = other.ChosenPokemon;
-}
-
 void Player::ChoosePokemon(int choice)
 {
-	switch (choice)
+	switch ((PokemonChoice)choice)
 	{
-	case 1:
+	case PokemonChoice::Bulbasaur:
 		ChosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100);
 		break;
-	case 2:
+	case PokemonChoice::Charmander:
 		ChosenPokemon = Pokemon("Charmander", PokemonType::Fire, 100);
 		break;
-	case 3:
+	case PokemonChoice::Squirtle:
 		ChosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100);
 		break;
 	default:

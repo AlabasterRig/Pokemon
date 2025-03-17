@@ -1,11 +1,10 @@
-#include <iostream>
-#include <string>
-#include <limits>
-#include "EPokemonChoice.hpp"
 #include "Player.hpp"
+#include "EPokemonChoice.hpp"
 #include "EPokemonType.hpp"
 #include "Utility.hpp"
-#include "Pokemon.hpp"
+#include <iostream>
+#include <limits>
+#include <string>
 using namespace std;
 
 class ProfessorOak

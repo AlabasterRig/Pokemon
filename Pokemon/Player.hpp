@@ -2,20 +2,17 @@
 #include "Pokemon.hpp"
 using namespace std;
 
+class Pokemon;
+
 class Player
 {
 public:
 	string Name;
 	Pokemon ChosenPokemon;
 
-	Player() 
-	{
-
-	}
+	Player();
 
 	Player(string name, Pokemon chosenPokemon);
-
-	Player(const Player& other);
 
 	void ChoosePokemon(int choice);
 };
