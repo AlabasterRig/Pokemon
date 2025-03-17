@@ -9,14 +9,15 @@ public:
 	string Name;
 	PokemonType Type;
 	int Health;
+	int MaxHealth;
 
 	Pokemon();
 
 	Pokemon(string name, PokemonType type, int health);
 
-	Pokemon(const Pokemon& other);
-
 	~Pokemon();
 
-	void Attack();
+	void Attack(Pokemon& AttackedPokemon);
+	void TakeDamage(int damage);
+	bool IsFainted() const;
 };

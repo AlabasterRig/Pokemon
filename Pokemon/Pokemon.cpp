@@ -18,18 +18,27 @@ Pokemon::Pokemon(string name, PokemonType type, int health)
 	Health = health;
 }
 
-Pokemon::Pokemon(const Pokemon& other)
-{
-	Name = other.Name;
-	Type = other.Type;
-	Health = other.Health;
-}
-
 Pokemon::~Pokemon()
 {
 }
 
-void Pokemon::Attack()
+void Pokemon::Attack(Pokemon& AttackedPokemon)
 {
-	cout << "Pokemon is attacking!" << endl;
+	int damage = 10;
+	cout << Name << " attacks " << AttackedPokemon.Name << "!\n";
+	AttackedPokemon.TakeDamage(damage);
+	cout << AttackedPokemon.Name << " took 10 damage!\n";}
+
+void Pokemon::TakeDamage(int damage)
+{
+	Health -= damage;
+	if (Health < 0)
+	{
+		Health = 0;
+	}
+}
+
+bool Pokemon::IsFainted() const
+{
+	return Health <= 0;
 }
