@@ -46,12 +46,14 @@ void Game::GameLoop(Player& player)
 		case 1:
 		{
 			Pokemon wildPokemon = encounterManager.GetRandomPokemonFromGrass(ForestGrass);
-			cout << "A wild " << wildPokemon.Name << " appeared!\n";
+			cout << "System: A wild " << wildPokemon.Name << " appeared!\n";
 			break;
 		}
 
 		case 2:
-			cout << "System: You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!\n";
+			cout << "System: You head towards the PokeCentre.\n";
+			player.ChosenPokemon.Heal();
+			cout << "System: Your " << player.ChosenPokemon.Name << " has been fully healed!\n";
 			break;
 
 		case 3:

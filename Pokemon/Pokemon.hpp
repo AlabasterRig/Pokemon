@@ -9,7 +9,8 @@ public:
 	string Name;
 	PokemonType Type;
 	int Health;
-	int MaxHealth;
+	int MaxHealth = 100;
+	int AttackPower = 10;
 
 	Pokemon();
 
@@ -20,4 +21,5 @@ public:
 	void Attack(Pokemon& AttackedPokemon);
 	void TakeDamage(int damage);
 	bool IsFainted() const;
+	void Heal();
 };

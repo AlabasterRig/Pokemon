@@ -24,7 +24,7 @@ Pokemon::~Pokemon()
 
 void Pokemon::Attack(Pokemon& AttackedPokemon)
 {
-	int damage = 10;
+	int damage = AttackPower;
 	cout << Name << " attacks " << AttackedPokemon.Name << "!\n";
 	AttackedPokemon.TakeDamage(damage);
 	cout << AttackedPokemon.Name << " took 10 damage!\n";}
@@ -41,4 +41,9 @@ void Pokemon::TakeDamage(int damage)
 bool Pokemon::IsFainted() const
 {
 	return Health <= 0;
+}
+
+void Pokemon::Heal()
+{
+	Health = MaxHealth;
 }
