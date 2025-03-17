@@ -5,5 +5,7 @@ enum class PokemonType
 	Water,
 	Electric,
 	Earth,
+	Bug,
+	Poison,
 	Normal
 };
