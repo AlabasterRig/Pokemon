@@ -1,4 +1,5 @@
 #include <string>
+#include "Pokemon.hpp"
 using namespace std;
 
 class Player
@@ -12,7 +13,7 @@ public:
 
 	}
 
-	Player(std::string name, Pokemon chosenPokemon);
+	Player(string name, Pokemon chosenPokemon);
 
 	Player(const Player& other);
 

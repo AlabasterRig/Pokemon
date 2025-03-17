@@ -3,6 +3,7 @@
 #include "Utility.hpp"
 #include "EPokemonType.hpp"
 #include "EPokemonChoice.hpp"
+using namespace std;
 
 
 Player::Player() {
@@ -10,7 +11,7 @@ Player::Player() {
 	ChosenPokemon = Pokemon();
 }
 
-Player::Player(std::string name, Pokemon chosenPokemon)
+Player::Player(string name, Pokemon chosenPokemon)
 {
 	Name = name;
 	ChosenPokemon = chosenPokemon;
