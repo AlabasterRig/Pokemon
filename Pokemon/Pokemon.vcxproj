@@ -154,11 +154,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Player.hpp" />
     <ClCompile Include="Pokemon.cpp" />
+    <ClCompile Include="ProfessorOak.cpp" />
     <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="WildEncounterManager.cpp" />
+    <ClCompile Include="WildEncounterManager.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -169,7 +173,10 @@
   <ItemGroup>
     <ClInclude Include="EPokemonChoice.hpp" />
     <ClInclude Include="EPokemonType.hpp" />
+    <ClInclude Include="FGrass.hpp" />
+    <ClInclude Include="Game.hpp" />
     <ClInclude Include="Pokemon.hpp" />
+    <ClInclude Include="ProfessorOak.hpp" />
     <ClInclude Include="Utility.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
