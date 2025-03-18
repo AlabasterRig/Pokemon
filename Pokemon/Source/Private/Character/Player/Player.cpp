@@ -36,5 +36,5 @@ void Player::ChoosePokemon(int choice)
 	}
 
 	cout << "System: You have chosen " << ChosenPokemon.Name << " as your first Pokemon!\n";
-	Utility::WaitForEnter();
+	N_Utility::Utility::WaitForEnter();
 }

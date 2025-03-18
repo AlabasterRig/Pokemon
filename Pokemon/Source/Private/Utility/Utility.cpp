@@ -3,20 +3,23 @@
 #include <iostream>
 using namespace std;
 
-void Utility::ClearConsole()
+namespace N_Utility
 {
-#ifdef _WIN32
-    system("cls");
-#else
-    (void)system("clear");
-#endif
-}
+    void Utility::ClearConsole()
+    {
+    #ifdef _WIN32
+        system("cls");
+    #else
+        (void)system("clear");
+    #endif
+    }
 
-void Utility::WaitForEnter()
-{
-	cin.get();
-}
+    void Utility::WaitForEnter()
+    {
+        cin.get();
+    }
 
-void Utility::ClearInputBuffer() {
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    void Utility::ClearInputBuffer() {
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    }
 }

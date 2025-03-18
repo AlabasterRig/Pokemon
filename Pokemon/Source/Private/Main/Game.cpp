@@ -29,7 +29,7 @@ void Game::GameLoop(Player& player)
 
 	while (KeepPlaying)
 	{
-		Utility::ClearConsole();
+		N_Utility::Utility::ClearConsole();
 		cout << "System: What would you like to do next " << player.Name << "?\n";
 		cout << "1. Battle a wild Pokemon\n";
 		cout << "2. Visit the PokeCenter\n";
@@ -39,7 +39,7 @@ void Game::GameLoop(Player& player)
 		cout << "System: Enter the number of your choice: \n";
 		cin >> choice;
 
-		Utility::ClearInputBuffer();
+		N_Utility::Utility::ClearInputBuffer();
 
 		switch (choice)
 		{
@@ -81,7 +81,7 @@ void Game::GameLoop(Player& player)
 			break;
 		}
 
-		Utility::WaitForEnter();
+		N_Utility::Utility::WaitForEnter();
 	}
 
 	cout << "System: Thanks for playing " << player.Name << " Goodbye!\n";
