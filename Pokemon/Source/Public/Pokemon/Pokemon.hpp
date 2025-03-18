@@ -14,7 +14,7 @@ public:
 
 	Pokemon();
 
-	Pokemon(string name, PokemonType type, int health);
+	Pokemon(string name, PokemonType type, int health, int attackPower);
 
 	~Pokemon();
 

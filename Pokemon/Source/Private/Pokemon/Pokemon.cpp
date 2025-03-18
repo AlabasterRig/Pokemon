@@ -8,14 +8,18 @@ Pokemon::Pokemon()
 {
 	Name = "Unknown";
 	Type = PokemonType::Normal;
-	Health = 100;
+	Health = 50;
+	MaxHealth = 50;
+	AttackPower = 10;
 }
 
-Pokemon::Pokemon(string name, PokemonType type, int health)
+Pokemon::Pokemon(string name, PokemonType type, int health, int attackPower)
 {
 	Name = name;
 	Type = type;
 	Health = health;
+	MaxHealth = health;
+	AttackPower = attackPower;
 }
 
 Pokemon::~Pokemon()
