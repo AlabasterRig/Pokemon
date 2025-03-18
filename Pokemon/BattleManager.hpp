@@ -1,10 +1,17 @@
+#include "FBattleState.hpp"
+
 class Pokemon;
 class Player;
 
 class BattleManager
 {
+private:
+	BattleState CurrentBattleState;
+
+	void Battle();
+	void HandleBattleOutcome();
+	void UpdateBattleState();
+
 public:
 	void StartBattle(Player& player, Pokemon& wildPokemon);
-	void Battle(Player& player, Pokemon& wildPokemon);
-	void HandleBattleOutcome(Player& player, Pokemon& wildPokemon, bool playerWon);
 };

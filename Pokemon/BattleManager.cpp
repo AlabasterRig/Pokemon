@@ -6,37 +6,57 @@ using namespace std;
 
 void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
 {
+	CurrentBattleState.PlayerPokemon = &player.ChosenPokemon;
+	CurrentBattleState.WildPokemon = &wildPokemon;
+	CurrentBattleState.PlayerTurn = true;
+	CurrentBattleState.BattleOngoing = true;
+
 	cout << "A wild " << wildPokemon.Name << " appeared!\n";
 	cout << "Go " << player.ChosenPokemon.Name << "!\n";
-	Battle(player, wildPokemon);
+	Battle();
 }
 
-void BattleManager::Battle(Player& player, Pokemon& wildPokemon)
+void BattleManager::Battle()
 {
-	while (!player.ChosenPokemon.IsFainted() && !wildPokemon.IsFainted())
+	while (CurrentBattleState.BattleOngoing)
 	{
-		player.ChosenPokemon.Attack(wildPokemon);
-		if (wildPokemon.IsFainted())
+		if (CurrentBattleState.PlayerTurn)
 		{
-			break;
+			CurrentBattleState.PlayerPokemon->Attack(*CurrentBattleState.WildPokemon);
 		}
-		wildPokemon.Attack(player.ChosenPokemon);
+		else
+		{
+			CurrentBattleState.WildPokemon->Attack(*CurrentBattleState.PlayerPokemon);
+		}
+
+		UpdateBattleState();
+
+		CurrentBattleState.PlayerTurn = !CurrentBattleState.PlayerTurn;
 	}
-	HandleBattleOutcome(player, wildPokemon, !player.ChosenPokemon.IsFainted());
+
+	HandleBattleOutcome();
 }
 
-void BattleManager::HandleBattleOutcome(Player& player, Pokemon& wildPokemon, bool playerWon)
+void BattleManager::HandleBattleOutcome()
 {
-	if (playerWon)
+	if (CurrentBattleState.PlayerPokemon->IsFainted())
 	{
-		cout << wildPokemon.Name << " has fainted!\n";
-		cout << player.ChosenPokemon.Name << " won the battle! Keep an eye on your Pokemon's health.\n";
-		Utility::WaitForEnter();
+		cout << "Your " << CurrentBattleState.PlayerPokemon->Name << " has fainted! Rush to the nearest PokeCenter to heal your Pokemon!\n";
 	}
-	else
+	else 
 	{
-		cout << "Bad Luck! " << player.ChosenPokemon.Name << " fainted! Visit the PokeCenter ASAP!\n";
-		cout << "Game Over!";
-		Utility::WaitForEnter();
+		cout << "You defeated the wild " << CurrentBattleState.WildPokemon->Name << "! Keep an eye on your Pokemon's health.\n";
+	}
+}
+
+void BattleManager::UpdateBattleState()
+{
+	if (CurrentBattleState.PlayerPokemon->IsFainted())
+	{
+		CurrentBattleState.BattleOngoing = false;
+	}
+	else if (CurrentBattleState.WildPokemon->IsFainted())
+	{
+		CurrentBattleState.BattleOngoing = false;
 	}
 }

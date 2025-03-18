@@ -173,6 +173,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BattleManager.hpp" />
+    <ClInclude Include="FBattleState.hpp" />
     <ClInclude Include="EPokemonChoice.hpp" />
     <ClInclude Include="EPokemonType.hpp" />
     <ClInclude Include="FGrass.hpp" />
