@@ -1,7 +1,7 @@
-#include "Pokemon.hpp"
+#include "../../Public/Pokemon/Pokemon.hpp"
+#include "../../Public/Pokemon/EPokemonType.hpp"
 #include <string>
 #include <iostream>
-#include "EPokemonType.hpp"
 using namespace std;
 
 Pokemon::Pokemon()

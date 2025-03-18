@@ -1,8 +1,8 @@
-#include "Player.hpp"
+#include "../../../Public/Character/Player/Player.hpp"
+#include "../../../Public/Utility/Utility.hpp"
+#include "../../../Public/Pokemon/EPokemonType.hpp"
+#include "../../../Public/Pokemon/EPokemonChoice.hpp"
 #include <iostream>
-#include "Utility.hpp"
-#include "EPokemonType.hpp"
-#include "EPokemonChoice.hpp"
 using namespace std;
 
 

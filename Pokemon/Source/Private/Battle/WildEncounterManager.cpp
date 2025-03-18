@@ -1,8 +1,8 @@
-#include "WildEncounterManager.hpp"
-#include "FGrass.hpp"
+#include "../../Public/Battle/WildEncounterManager.hpp"
+#include "../../Public/Pokemon/FGrass.hpp"
+#include "../../Public/Pokemon/Pokemon.hpp"
 #include <cstdlib>
 #include <ctime>
-#include "Pokemon.hpp"
 
 WildEncounterManager::WildEncounterManager()
 {

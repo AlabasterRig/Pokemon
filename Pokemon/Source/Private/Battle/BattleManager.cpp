@@ -1,6 +1,6 @@
-#include "BattleManager.hpp"
-#include "Player.hpp"
-#include "Utility.hpp"
+#include "../../Public/Battle/BattleManager.hpp"
+#include "../../Public/Character/Player/Player.hpp"
+#include "../../Public/Utility/Utility.hpp"
 #include <iostream>
 using namespace std;
 

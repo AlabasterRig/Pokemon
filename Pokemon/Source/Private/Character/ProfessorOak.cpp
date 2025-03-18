@@ -1,6 +1,6 @@
-#include "ProfessorOak.hpp"
-#include "Player.hpp"
-#include "Utility.hpp"
+#include "../../Public/Character/ProfessorOak.hpp"
+#include "../../Public/Character/Player/Player.hpp"
+#include "../../Public/Utility/Utility.hpp"
 
 void ProfessorOak::GreetPlayer(Player& player)
 {

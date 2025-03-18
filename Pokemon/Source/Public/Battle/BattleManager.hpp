@@ -1,4 +1,4 @@
-#include "FBattleState.hpp"
+#include "../../Public/Battle/FBattleState.hpp"
 
 class Pokemon;
 class Player;
