@@ -164,6 +164,10 @@
     <ClCompile Include="Source\Private\Utility\Utility.cpp" />
     <ClCompile Include="Source\Private\Battle\WildEncounterManager.cpp" />
     <ClCompile Include="Source\Public\Battle\WildEncounterManager.hpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Pikachu.cpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Pidgey.cpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Caterpie.cpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Zubat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -180,6 +184,10 @@
     <ClInclude Include="Source\Public\Main\Game.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemon.hpp" />
     <ClInclude Include="Source\Public\Character\ProfessorOak.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Caterpie.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Pidgey.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Pikachu.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Zubat.hpp" />
     <ClInclude Include="Source\Public\Utility\Utility.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
