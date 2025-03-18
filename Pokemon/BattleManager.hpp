@@ -1,7 +1,10 @@
 class Pokemon;
+class Player;
 
 class BattleManager
 {
 public:
-	void Battle(Pokemon& playerPokemon, Pokemon& wildPokemon);
+	void StartBattle(Player& player, Pokemon& wildPokemon);
+	void Battle(Player& player, Pokemon& wildPokemon);
+	void HandleBattleOutcome(Player& player, Pokemon& wildPokemon, bool playerWon);
 };

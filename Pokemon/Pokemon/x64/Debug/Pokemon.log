@@ -1,4 +1,5 @@
-﻿  Game.cpp
+﻿  BattleManager.cpp
+  Game.cpp
   main.cpp
   Player.cpp
   Player.hpp

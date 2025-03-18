@@ -7,16 +7,36 @@
       "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:BattleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:BattleManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\WildEncounterManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:WildEncounterManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\WildEncounterManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:WildEncounterManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Pokemon.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Pokemon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Player.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Utility.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Utility.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -25,14 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Game.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\WildEncounterManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{872261CB-D6AC-488B-91C5-1B44032596F2}|Pokemon.vcxproj|solutionrelative:WildEncounterManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,59 +66,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BattleManager.cpp",
-              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.cpp",
-              "RelativeDocumentMoniker": "BattleManager.cpp",
-              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.cpp",
-              "RelativeToolTip": "BattleManager.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T12:10:55.59Z",
-              "EditorCaption": ""
+              "DocumentIndex": 7,
+              "Title": "Player.hpp",
+              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Player.hpp",
+              "RelativeDocumentMoniker": "Player.hpp",
+              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Player.hpp",
+              "RelativeToolTip": "Player.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T19:00:28.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Utility.hpp",
+              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Utility.hpp",
+              "RelativeDocumentMoniker": "Utility.hpp",
+              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Utility.hpp",
+              "RelativeToolTip": "Utility.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T19:00:22.61Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BattleManager.hpp",
-              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.hpp",
-              "RelativeDocumentMoniker": "BattleManager.hpp",
-              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.hpp",
-              "RelativeToolTip": "BattleManager.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T12:09:48.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Pokemon.cpp",
-              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.cpp",
-              "RelativeDocumentMoniker": "Pokemon.cpp",
-              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.cpp",
-              "RelativeToolTip": "Pokemon.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAnwBwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-17T12:03:32.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Pokemon.hpp",
-              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.hpp",
-              "RelativeDocumentMoniker": "Pokemon.hpp",
-              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.hpp",
-              "RelativeToolTip": "Pokemon.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T11:43:31.194Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "WildEncounterManager.cpp",
               "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\WildEncounterManager.cpp",
               "RelativeDocumentMoniker": "WildEncounterManager.cpp",
@@ -119,20 +103,85 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WildEncounterManager.hpp",
+              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\WildEncounterManager.hpp",
+              "RelativeDocumentMoniker": "WildEncounterManager.hpp",
+              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\WildEncounterManager.hpp",
+              "RelativeToolTip": "WildEncounterManager.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T19:00:18.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BattleManager.cpp",
+              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.cpp",
+              "RelativeDocumentMoniker": "BattleManager.cpp",
+              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.cpp",
+              "RelativeToolTip": "BattleManager.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T12:10:55.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BattleManager.hpp",
+              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.hpp",
+              "RelativeDocumentMoniker": "BattleManager.hpp",
+              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\BattleManager.hpp",
+              "RelativeToolTip": "BattleManager.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T12:09:48.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Pokemon.cpp",
+              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.cpp",
+              "RelativeDocumentMoniker": "Pokemon.cpp",
+              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.cpp",
+              "RelativeToolTip": "Pokemon.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-17T12:03:32.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pokemon.hpp",
+              "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.hpp",
+              "RelativeDocumentMoniker": "Pokemon.hpp",
+              "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Pokemon.hpp",
+              "RelativeToolTip": "Pokemon.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-17T11:43:31.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Game.cpp",
               "RelativeDocumentMoniker": "Game.cpp",
               "ToolTip": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Game.cpp",
               "RelativeToolTip": "Game.cpp",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-17T08:15:12.865Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Game.hpp",
               "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\Game.hpp",
               "RelativeDocumentMoniker": "Game.hpp",
@@ -140,12 +189,11 @@
               "RelativeToolTip": "Game.hpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-03-17T08:13:47.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T08:13:47.851Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\utkri\\source\\repos\\Pokemon\\Pokemon\\main.cpp",
               "RelativeDocumentMoniker": "main.cpp",
@@ -153,8 +201,7 @@
               "RelativeToolTip": "main.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-13T13:08:44.783Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T13:08:44.783Z"
             }
           ]
         }
