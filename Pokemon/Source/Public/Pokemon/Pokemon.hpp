@@ -5,13 +5,14 @@ enum class PokemonType;
 
 class Pokemon
 {
-public:
+protected:
 	string Name;
 	PokemonType Type;
 	int Health;
 	int MaxHealth = 100;
 	int AttackPower = 10;
 
+public:
 	Pokemon();
 
 	Pokemon(string name, PokemonType type, int health, int attackPower);

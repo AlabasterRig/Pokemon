@@ -2,7 +2,9 @@
 
 class Zubat : public Pokemon
 {
+private:
+	void WingAttack(Pokemon& AttackedPokemon);
+
 public:
 	Zubat();
-	void WingAttack(Pokemon& AttackedPokemon);
 };
