@@ -10,12 +10,12 @@ using namespace std;
 Game::Game()
 {
 	ForestGrass = {
-		{{"Pidgey", PokemonType::Normal, 10}, {"Caterpie", PokemonType::Bug, 35}},
+		{{"Pidgey", PokemonType::Normal, 10, 10}, {"Caterpie", PokemonType::Bug, 35, 10}},
 		80,
 		"Forest"
 	};
 	CaveGrass = {
-		{{"Zubat", PokemonType::Poison, 40}, {"Geodude", PokemonType::Earth, 35}},
+		{{"Zubat", PokemonType::Poison, 40, 10}, {"Geodude", PokemonType::Earth, 35, 10}},
 		80,
 		"Cave"
 	};

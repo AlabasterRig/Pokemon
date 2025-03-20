@@ -168,6 +168,9 @@
     <ClCompile Include="Source\Private\Pokemon\Pokemons\Pidgey.cpp" />
     <ClCompile Include="Source\Private\Pokemon\Pokemons\Caterpie.cpp" />
     <ClCompile Include="Source\Private\Pokemon\Pokemons\Zubat.cpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Charmander.cpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Squirtle.cpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Bulbasaur.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -184,9 +187,12 @@
     <ClInclude Include="Source\Public\Main\Game.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemon.hpp" />
     <ClInclude Include="Source\Public\Character\ProfessorOak.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Bulbasaur.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Caterpie.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Charmander.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Pidgey.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Pikachu.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Squirtle.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Zubat.hpp" />
     <ClInclude Include="Source\Public\Utility\Utility.hpp" />
   </ItemGroup>

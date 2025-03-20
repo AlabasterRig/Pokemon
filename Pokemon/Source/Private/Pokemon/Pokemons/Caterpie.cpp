@@ -7,7 +7,7 @@ Caterpie::Caterpie()
 	Pokemon("Caterpie", PokemonType::Bug, 100, 10);
 }
 
-void Caterpie::Tackle(Pokemon& AttackedPokemon)
+void Caterpie::Attack(Pokemon& AttackedPokemon)
 {
 	int damage = AttackPower + 5;
 	std::cout << Name << " uses Tackle on " << AttackedPokemon.Name << "!\n";

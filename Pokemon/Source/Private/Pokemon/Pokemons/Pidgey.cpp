@@ -7,7 +7,7 @@ Pidgey::Pidgey()
 	Pokemon("Pidgey", PokemonType::Normal, 100, 10);
 }
 
-void Pidgey::WingAttack(Pokemon& AttackedPokemon)
+void Pidgey::Attack(Pokemon& AttackedPokemon)
 {
 	int damage = AttackPower + 5;
 	std::cout << Name << " uses Wing Attack on " << AttackedPokemon.Name << "!\n";
