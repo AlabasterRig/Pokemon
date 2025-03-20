@@ -3,11 +3,11 @@
 #include <iostream>
 using namespace std;
 
-void Squirtle::Attack(Pokemon& AttackedPokemon)
+void Squirtle::Attack(Pokemon* AttackedPokemon)
 {
 	int damage = AttackPower + 5;
-	std::cout << Name << " uses Water Gun on " << AttackedPokemon.Name << "!\n";
-	AttackedPokemon.TakeDamage(damage);
+	std::cout << Name << " uses Water Gun on " << AttackedPokemon->Name << "!\n";
+	AttackedPokemon->TakeDamage(damage);
 }
 
 Squirtle::Squirtle()

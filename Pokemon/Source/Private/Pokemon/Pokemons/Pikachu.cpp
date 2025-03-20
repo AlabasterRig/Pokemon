@@ -7,9 +7,9 @@ Pikachu::Pikachu()
 	Pokemon("Pikachu", PokemonType::Electric, 100, 10);
 }
 
-void Pikachu::Attack(Pokemon& AttackedPokemon)
+void Pikachu::Attack(Pokemon* AttackedPokemon)
 {
 	int damage = AttackPower + 5;
-	std::cout << Name << " uses Thunder Shock on " << AttackedPokemon.Name << "!\n";
-	AttackedPokemon.TakeDamage(damage);
+	std::cout << Name << " uses Thunder Shock on " << AttackedPokemon->Name << "!\n";
+	AttackedPokemon->TakeDamage(damage);
 }

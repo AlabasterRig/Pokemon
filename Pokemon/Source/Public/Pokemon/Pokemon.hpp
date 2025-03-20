@@ -19,7 +19,7 @@ public:
 
 	~Pokemon();
 
-	void Attack(Pokemon& AttackedPokemon);
+	virtual void Attack(Pokemon* AttackedPokemon);
 	void TakeDamage(int damage);
 	bool IsFainted() const;
 	void Heal();

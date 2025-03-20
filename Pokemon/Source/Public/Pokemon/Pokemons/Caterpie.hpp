@@ -3,7 +3,7 @@
 class Caterpie : public Pokemon
 {
 private:
-	void Attack(Pokemon& AttackedPokemon);
+	void Attack(Pokemon* AttackedPokemon) override;
 
 public:
 	Caterpie();

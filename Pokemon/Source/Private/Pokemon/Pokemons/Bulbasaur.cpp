@@ -3,11 +3,11 @@
 #include <iostream>
 using namespace std;
 
-void Bulbasaur::Attack(Pokemon& AttackedPokemon)
+void Bulbasaur::Attack(Pokemon* AttackedPokemon)
 {
 	int damage = AttackPower + 5;
-	cout << Name << " uses Vine Whip on " << AttackedPokemon.Name << "!\n";
-	AttackedPokemon.TakeDamage(damage);
+	cout << Name << " uses Vine Whip on " << AttackedPokemon->Name << "!\n";
+	AttackedPokemon->TakeDamage(damage);
 }
 
 Bulbasaur::Bulbasaur()

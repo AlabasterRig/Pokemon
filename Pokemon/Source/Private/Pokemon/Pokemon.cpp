@@ -26,12 +26,13 @@ Pokemon::~Pokemon()
 {
 }
 
-void Pokemon::Attack(Pokemon& AttackedPokemon)
+void Pokemon::Attack(Pokemon* AttackedPokemon)
 {
 	int damage = AttackPower;
-	cout << Name << " attacks " << AttackedPokemon.Name << "!\n";
-	AttackedPokemon.TakeDamage(damage);
-	cout << AttackedPokemon.Name << " took 10 damage!\n";}
+	cout << Name << " attacks " << AttackedPokemon->Name << "!\n";
+	AttackedPokemon->TakeDamage(damage);
+	cout << AttackedPokemon->Name << " took 10 damage!\n";
+}
 
 void Pokemon::TakeDamage(int damage)
 {

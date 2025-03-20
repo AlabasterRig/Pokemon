@@ -7,9 +7,9 @@ Zubat::Zubat()
 	Pokemon("Zubat", PokemonType::Poison, 100, 20);
 }
 
-void Zubat::Attack(Pokemon& AttackedPokemon)
+void Zubat::Attack(Pokemon* AttackedPokemon)
 {
 	int damage = AttackPower + 5;
-	std::cout << Name << " uses Super Sonic on " << AttackedPokemon.Name << "!\n";
-	AttackedPokemon.TakeDamage(damage);
+	std::cout << Name << " uses Super Sonic on " << AttackedPokemon->Name << "!\n";
+	AttackedPokemon->TakeDamage(damage);
 }

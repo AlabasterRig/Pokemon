@@ -3,11 +3,11 @@
 #include <iostream>
 using namespace std;
 
-void Charmander::Attack(Pokemon& AttackedPokemon)
+void Charmander::Attack(Pokemon* AttackedPokemon)
 {
 	int damage = AttackPower + 5;
-	cout << Name << " uses Ember on " << AttackedPokemon.Name << "!\n";
-	AttackedPokemon.TakeDamage(damage);
+	cout << Name << " uses Ember on " << AttackedPokemon->Name << "!\n";
+	AttackedPokemon->TakeDamage(damage);
 }
 
 Charmander::Charmander()
