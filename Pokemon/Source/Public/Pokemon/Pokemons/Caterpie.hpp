@@ -3,7 +3,7 @@
 class Caterpie : public Pokemon
 {
 private:
-	void Tackle(Pokemon& AttackedPokemon);
+	void Attack(Pokemon& AttackedPokemon);
 
 public:
 	Caterpie();

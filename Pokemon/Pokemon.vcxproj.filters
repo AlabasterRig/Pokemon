@@ -57,6 +57,15 @@
     <ClCompile Include="Source\Private\Pokemon\Pokemons\Zubat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Charmander.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Squirtle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Private\Pokemon\Pokemons\Bulbasaur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Public\Pokemon\EPokemonType.hpp">
@@ -96,6 +105,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Zubat.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Charmander.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Squirtle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Public\Pokemon\Pokemons\Bulbasaur.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

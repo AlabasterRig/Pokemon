@@ -22,16 +22,16 @@ void Player::ChoosePokemon(int choice)
 	switch ((PokemonChoice)choice)
 	{
 	case PokemonChoice::Bulbasaur:
-		ChosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100);
+		ChosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100, 10);
 		break;
 	case PokemonChoice::Charmander:
-		ChosenPokemon = Pokemon("Charmander", PokemonType::Fire, 100);
+		ChosenPokemon = Pokemon("Charmander", PokemonType::Fire, 100, 10);
 		break;
 	case PokemonChoice::Squirtle:
-		ChosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100);
+		ChosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100, 10);
 		break;
 	default:
-		ChosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100);
+		ChosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100, 10);
 		break;
 	}
 

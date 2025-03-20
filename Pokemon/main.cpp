@@ -10,18 +10,23 @@ using namespace std;
 
 int main()
 {
-	Pokemon pokemon("Pikachu", PokemonType::Electric, 100);
-	Player player("Trainer", pokemon);
-	ProfessorOak professorOak;
+	Pokemon* pokemon = new Pokemon("Pikachu", PokemonType::Electric, 100, 10);
+	Player* player = new Player("Trainer", pokemon);
+	ProfessorOak* professorOak = new ProfessorOak();
 
-	professorOak.Name = "Professor Oak";
+	professorOak->Name = "Professor Oak";
 
-	professorOak.GreetPlayer(player);
-	professorOak.OfferPokemon(player);
-	professorOak.ExplainMainQuest(player);
+	professorOak->GreetPlayer(*player);
+	professorOak->OfferPokemon(*player);
+	professorOak->ExplainMainQuest(*player);
 
-	Game game;
-	game.GameLoop(player);
+	Game* game = new Game();
+	game->GameLoop(*player);
+
+	delete(pokemon);
+	delete(player);
+	delete(professorOak);
+	delete(game);
 
 	return 0;
 }

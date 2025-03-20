@@ -5,7 +5,7 @@
 class Pikachu : public Pokemon
 {
 private:
-	void ThunderShock(Pokemon& AttackedPokemon);
+	void Attack(Pokemon& AttackedPokemon);
 
 public :
 	Pikachu();
