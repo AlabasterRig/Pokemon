@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+	N_Utility::Utility::InitRandom();
 	Pokemon* pokemon = new Pokemon("Pikachu", PokemonType::Electric, 100, 10);
 	Player* player = new Player("Trainer");
 	ProfessorOak* professorOak = new ProfessorOak();

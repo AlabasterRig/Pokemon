@@ -1,5 +1,6 @@
 #include "../../Public/Pokemon/Pokemon.hpp"
 #include "../../Public/Pokemon/EPokemonType.hpp"
+#include "../../Public/Utility/Utility.hpp"
 #include <string>
 #include <iostream>
 using namespace std;
@@ -37,10 +38,13 @@ Pokemon::~Pokemon()
 
 void Pokemon::Attack(Pokemon* AttackedPokemon)
 {
-	int damage = AttackPower;
+	int damage = N_Utility::Utility::Randomize(AttackPower) + 5;
 	cout << Name << " attacks " << AttackedPokemon->Name << "!\n";
+	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);
-	cout << AttackedPokemon->Name << " took 10 damage!\n";
+	cout << AttackedPokemon->Name << " took " << damage << " damage!\n";
+	std::cout << AttackedPokemon->Name << "'s current health: " << AttackedPokemon->Health << "/" << AttackedPokemon->MaxHealth << "\n";
+	N_Utility::Utility::WaitForEnter();
 }
 
 void Pokemon::TakeDamage(int damage)
