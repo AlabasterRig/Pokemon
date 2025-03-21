@@ -1,16 +1,17 @@
 #include <string>
-#include "../../Pokemon/Pokemon.hpp"
 using namespace std;
+
+class Pokemon;
 
 class Player
 {
 public:
 	string Name;
-	Pokemon ChosenPokemon;
+	Pokemon* ChosenPokemon = nullptr;
 
 	Player();
 
-	Player(string name, Pokemon chosenPokemon);
+	Player(string name);
 
 	void ChoosePokemon(int choice);
 };

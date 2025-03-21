@@ -2,9 +2,8 @@
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include <iostream>
 
-Pikachu::Pikachu()
+Pikachu::Pikachu() : Pokemon("Pikachu", PokemonType::Electric, 100, 10)
 {
-	Pokemon("Pikachu", PokemonType::Electric, 100, 10);
 }
 
 void Pikachu::Attack(Pokemon* AttackedPokemon)

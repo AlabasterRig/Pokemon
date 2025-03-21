@@ -13,5 +13,5 @@ private:
 	void UpdateBattleState();
 
 public:
-	void StartBattle(Player& player, Pokemon& wildPokemon);
+	void StartBattle(Player* player, Pokemon* wildPokemon);
 };

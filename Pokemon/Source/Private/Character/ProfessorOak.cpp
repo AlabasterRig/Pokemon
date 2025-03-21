@@ -1,8 +1,9 @@
 #include "../../Public/Character/ProfessorOak.hpp"
-#include "../../Public/Character/Player/Player.hpp"
 #include "../../Public/Utility/Utility.hpp"
+#include "../../Public/Character/Player/Player.hpp"
+#include "../../Public/Pokemon/Pokemon.hpp"
 
-void ProfessorOak::GreetPlayer(Player& player)
+void ProfessorOak::GreetPlayer()
 {
 	cout << "Professor Oak: Hello there! Welcome to the world of Pokemon!\n";
 	N_Utility::Utility::WaitForEnter();
@@ -10,13 +11,13 @@ void ProfessorOak::GreetPlayer(Player& player)
 	N_Utility::Utility::WaitForEnter();
 }
 
-void ProfessorOak::OfferPokemon(Player& player)
+void ProfessorOak::OfferPokemon(Player* player)
 {
 	cout << "Professor Oak: Before we begin, what's your name, Trainer?\n";
 	cout << "System: Enter your name: ";
-	cin >> player.Name;
+	cin >> player->Name;
 
-	cout << "Professor Oak: Ah, so your name is " << player.Name << "! A fine name indeed.\n";
+	cout << "Professor Oak: Ah, so your name is " << player->Name << "! A fine name indeed.\n";
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: In this vast world, Pokemon and humans live side by side, forging friendships and facing challenges together.\n";
 	N_Utility::Utility::WaitForEnter();
@@ -37,37 +38,37 @@ void ProfessorOak::OfferPokemon(Player& player)
 
 	int choice;
 	cin >> choice;
-	player.ChoosePokemon(choice);
+	player->ChoosePokemon(choice);
 }
 
-void ProfessorOak::ExplainMainQuest(Player& player)
+void ProfessorOak::ExplainMainQuest(Player* player)
 {
 	N_Utility::Utility::ClearConsole();
-	cout << "Professor Oak: Congratulations, " << player.Name << "! You've chosen " << player.ChosenPokemon.Name << "!" << endl;
+	cout << "Professor Oak: Congratulations, " << player->Name << "! You've chosen " << player->ChosenPokemon->Name << "!" << endl;
 	N_Utility::Utility::WaitForEnter();
-	cout << "Professor Oak: But make no mistake, " << player.Name << ", this is only the beginning." << endl;
+	cout << "Professor Oak: But make no mistake, " << player->Name << ", this is only the beginning." << endl;
 	N_Utility::Utility::WaitForEnter();
-	cout << "Professor Oak: Oak - ay " << player.Name << ", I am about to explain you about your upcoming grand adventure." << endl;
+	cout << "Professor Oak: Oak - ay " << player->Name << ", I am about to explain you about your upcoming grand adventure." << endl;
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: You see, becoming a Pokemon Master is no easy feat. It takes courage, wisdom, and a bit of luck." << endl;
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: Your mission, should you choose to accept it (and trust me, you really don’t have a choice) is to collect all the Pokemon Badges and conquer the Pokemon League." << endl;
 	N_Utility::Utility::WaitForEnter();
-	cout << player.Name << ": Wait... that sounds a lot like every other Pokemon game out there." << endl;
+	cout << player->Name << ": Wait... that sounds a lot like every other Pokemon game out there." << endl;
 	N_Utility::Utility::WaitForEnter();
-	cout << "Professor Oak: Shhh! Don't break the fourth wall" << player.Name << "! This is serious business." << endl;
+	cout << "Professor Oak: Shhh! Don't break the fourth wall" << player->Name << "! This is serious business." << endl;
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: To achieve this, you'll need to battle wild Pokemon, challenge gym leaders, and of course, keep your Pokemon healthy at the PokeCenter." << endl;
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: Along the way, you'll capture new Pokemon to strengthen your team. Just remember—there's a limit to how many Pokemon you can carry, so choose wisely!" << endl;
 	N_Utility::Utility::WaitForEnter();
-	cout << player.Name << ": Sounds like a walk in the park... right?" << endl;
+	cout << player->Name << ": Sounds like a walk in the park... right?" << endl;
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: Hah! That's what they all say! But beware, young Trainer, the path to victory is fraught with challenges. And if you lose a battle... well, let's just say you'll be starting from square one." << endl;
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: So, what do you say? Are you ready to become the next Pokemon Champion?\n";
 	N_Utility::Utility::WaitForEnter();
-	cout << player.Name << ": Ready as I'll ever be, Professor!\n";
+	cout << player->Name << ": Ready as I'll ever be, Professor!\n";
 	N_Utility::Utility::WaitForEnter();
 	cout << "Professor Oak: That's the spirit! Now, your journey begins.";
 	N_Utility::Utility::WaitForEnter();

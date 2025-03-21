@@ -22,6 +22,15 @@ Pokemon::Pokemon(string name, PokemonType type, int health, int attackPower)
 	AttackPower = attackPower;
 }
 
+Pokemon::Pokemon(Pokemon* other)
+{
+	Name = other->Name;
+	Type = other->Type;
+	Health = other->Health;
+	MaxHealth = other->MaxHealth;
+	AttackPower = other->AttackPower;
+}
+
 Pokemon::~Pokemon()
 {
 }

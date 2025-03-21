@@ -1,3 +1,5 @@
+#pragma once
+
 #include "../Pokemon.hpp"
 
 class Caterpie : public Pokemon

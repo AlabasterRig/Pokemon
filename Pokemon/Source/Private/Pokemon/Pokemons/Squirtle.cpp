@@ -10,7 +10,6 @@ void Squirtle::Attack(Pokemon* AttackedPokemon)
 	AttackedPokemon->TakeDamage(damage);
 }
 
-Squirtle::Squirtle()
+Squirtle::Squirtle() : Pokemon("Squirtle", PokemonType::Water, 100, 10)
 {
-	Pokemon("Squirtle", PokemonType::Water, 100, 10);
 }

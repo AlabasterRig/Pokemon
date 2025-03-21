@@ -9,8 +9,9 @@ WildEncounterManager::WildEncounterManager()
 	srand(time(0));
 }
 
-Pokemon WildEncounterManager::GetRandomPokemonFromGrass(const Grass& grass)
+Pokemon* WildEncounterManager::GetRandomPokemonFromGrass(Grass& grass)
 {
 	int RandomIndex = rand() % grass.WildPokemonList.size();
-	return grass.WildPokemonList[RandomIndex];
+	Pokemon* wildPokemon = grass.WildPokemonList[RandomIndex];
+	return wildPokemon;
 }

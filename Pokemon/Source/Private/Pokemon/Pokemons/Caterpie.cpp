@@ -2,9 +2,8 @@
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include <iostream>
 
-Caterpie::Caterpie()
+Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::Bug, 100, 10)
 {
-	Pokemon("Caterpie", PokemonType::Bug, 100, 10);
 }
 
 void Caterpie::Attack(Pokemon* AttackedPokemon)

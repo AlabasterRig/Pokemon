@@ -10,7 +10,6 @@ void Charmander::Attack(Pokemon* AttackedPokemon)
 	AttackedPokemon->TakeDamage(damage);
 }
 
-Charmander::Charmander()
+Charmander::Charmander() : Pokemon("Charmander", PokemonType::Fire, 100, 10)
 {
-	Pokemon("Charmander", PokemonType::Fire, 100, 10);
 }

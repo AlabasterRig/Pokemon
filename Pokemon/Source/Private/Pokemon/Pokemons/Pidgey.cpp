@@ -2,9 +2,8 @@
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include <iostream>
 
-Pidgey::Pidgey()
+Pidgey::Pidgey() : Pokemon("Pidgey", PokemonType::Normal, 100, 10)
 {
-	Pokemon("Pidgey", PokemonType::Normal, 100, 10);
 }
 
 void Pidgey::Attack(Pokemon* AttackedPokemon)

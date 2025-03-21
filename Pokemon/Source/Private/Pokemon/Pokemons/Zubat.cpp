@@ -2,9 +2,8 @@
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include <iostream>
 
-Zubat::Zubat()
+Zubat::Zubat() : Pokemon("Zubat", PokemonType::Poison, 100, 20)
 {
-	Pokemon("Zubat", PokemonType::Poison, 100, 20);
 }
 
 void Zubat::Attack(Pokemon* AttackedPokemon)

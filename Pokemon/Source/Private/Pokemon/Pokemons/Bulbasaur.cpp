@@ -10,7 +10,6 @@ void Bulbasaur::Attack(Pokemon* AttackedPokemon)
 	AttackedPokemon->TakeDamage(damage);
 }
 
-Bulbasaur::Bulbasaur()
+Bulbasaur::Bulbasaur() : Pokemon("Bulbasaur", PokemonType::Grass, 100, 10)
 {
-	Pokemon("Bulbasaur", PokemonType::Grass, 100, 10);
 }

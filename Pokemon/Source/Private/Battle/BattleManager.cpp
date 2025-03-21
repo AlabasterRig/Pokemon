@@ -1,17 +1,18 @@
 #include "../../Public/Battle/BattleManager.hpp"
 #include "../../Public/Character/Player/Player.hpp"
+#include "../../Public/Pokemon/Pokemon.hpp"
 #include <iostream>
 using namespace std;
 
-void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
+void BattleManager::StartBattle(Player* player, Pokemon* wildPokemon)
 {
-	CurrentBattleState.PlayerPokemon = &player.ChosenPokemon;
-	CurrentBattleState.WildPokemon = &wildPokemon;
+	CurrentBattleState.PlayerPokemon = player->ChosenPokemon;
+	CurrentBattleState.WildPokemon = wildPokemon;
 	CurrentBattleState.PlayerTurn = true;
 	CurrentBattleState.BattleOngoing = true;
 
-	cout << "A wild " << wildPokemon.Name << " appeared!\n";
-	cout << "Go " << player.ChosenPokemon.Name << "!\n";
+	cout << "A wild " << wildPokemon->Name << " appeared!\n";
+	cout << "Go " << player->ChosenPokemon->Name << "!\n";
 	Battle();
 }
 
@@ -21,11 +22,11 @@ void BattleManager::Battle()
 	{
 		if (CurrentBattleState.PlayerTurn)
 		{
-			CurrentBattleState.PlayerPokemon->Attack(*CurrentBattleState.WildPokemon);
+			CurrentBattleState.PlayerPokemon->Attack(CurrentBattleState.WildPokemon);
 		}
 		else
 		{
-			CurrentBattleState.WildPokemon->Attack(*CurrentBattleState.PlayerPokemon);
+			CurrentBattleState.WildPokemon->Attack(CurrentBattleState.PlayerPokemon);
 		}
 
 		UpdateBattleState();
