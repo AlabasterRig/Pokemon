@@ -1,12 +1,13 @@
 #include "../../../Public//Pokemon//Pokemons/Charmander.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
+#include "../../../Public/Pokemon/Move.hpp"
 #include <iostream>
 using namespace std;
 
-void Charmander::Attack(Pokemon* AttackedPokemon)
+void Charmander::Attack(Move SelectedMove, Pokemon* AttackedPokemon)
 {
-	int damage = N_Utility::Utility::Randomize(AttackPower) + 5;
+	int damage = N_Utility::Utility::Randomize(SelectedMove.Power) + 5;
 	cout << Name << " uses Ember on " << AttackedPokemon->Name << "!\n";
 	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);
@@ -15,6 +16,6 @@ void Charmander::Attack(Pokemon* AttackedPokemon)
 	N_Utility::Utility::WaitForEnter();
 }
 
-Charmander::Charmander() : Pokemon("Charmander", PokemonType::Fire, 100, 10)
+Charmander::Charmander() : Pokemon("Charmander", PokemonType::Fire, 100, {Move("NORMAL ATTACK", 10), Move("EMBER", 15), Move("FLAMETHROWER", 15)})
 {
 }

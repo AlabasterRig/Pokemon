@@ -1,15 +1,16 @@
 #include "../../../Public/Pokemon/Pokemons/Caterpie.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
+#include "../../../Public/Pokemon/Move.hpp"
 #include <iostream>
 
-Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::Bug, 100, 10)
+Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::Bug, 100, {Move("NORMAL ATTACK", 10), Move("TACKLE", 15), Move("STRING SHOT", 15)})
 {
 }
 
-void Caterpie::Attack(Pokemon* AttackedPokemon)
+void Caterpie::Attack(Move SelectedMove, Pokemon* AttackedPokemon)
 {
-	int damage = N_Utility::Utility::Randomize(AttackPower) + 5;
+	int damage = N_Utility::Utility::Randomize(SelectedMove.Power) + 5;
 	std::cout << Name << " uses Tackle on " << AttackedPokemon->Name << "!\n";
 	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);

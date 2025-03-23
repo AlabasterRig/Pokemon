@@ -31,11 +31,11 @@ void BattleManager::Battle()
 		}
 		if (CurrentBattleState.PlayerTurn)
 		{
-			CurrentBattleState.PlayerPokemon->Attack(CurrentBattleState.WildPokemon);
+			CurrentBattleState.PlayerPokemon->SelectAndUseMove(CurrentBattleState.WildPokemon);
 		}
 		else
 		{
-			CurrentBattleState.WildPokemon->Attack(CurrentBattleState.PlayerPokemon);
+			CurrentBattleState.WildPokemon->SelectAndUseMove(CurrentBattleState.PlayerPokemon);
 		}
 
 		UpdateBattleState();

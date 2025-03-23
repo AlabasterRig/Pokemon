@@ -2,10 +2,12 @@
 
 #include "../Pokemon.hpp"
 
+struct Move;
+
 class Pikachu : public Pokemon
 {
 private:
-	void Attack(Pokemon* AttackedPokemon) override;
+	void Attack(Move SelectedMove, Pokemon* AttackedPokemon) override;
 
 public :
 	Pikachu();

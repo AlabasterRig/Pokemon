@@ -1,12 +1,13 @@
 #include "../../../Public//Pokemon/Pokemons/Squirtle.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
+#include "../../../Public/Pokemon/Move.hpp"
 #include <iostream>
 using namespace std;
 
-void Squirtle::Attack(Pokemon* AttackedPokemon)
+void Squirtle::Attack(Move SelectedMove, Pokemon* AttackedPokemon)
 {
-	int damage = N_Utility::Utility::Randomize(AttackPower) + 5;
+	int damage = N_Utility::Utility::Randomize(SelectedMove.Power) + 5;
 	std::cout << Name << " uses Water Gun on " << AttackedPokemon->Name << "!\n";
 	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);
@@ -15,6 +16,6 @@ void Squirtle::Attack(Pokemon* AttackedPokemon)
 	N_Utility::Utility::WaitForEnter();
 }
 
-Squirtle::Squirtle() : Pokemon("Squirtle", PokemonType::Water, 100, 10)
+Squirtle::Squirtle() : Pokemon("Squirtle", PokemonType::Water, 100, {Move("NORMAL ATTACK", 10), Move("WATER GUN", 15), Move("SHELL SMASH", 15)})
 {
 }

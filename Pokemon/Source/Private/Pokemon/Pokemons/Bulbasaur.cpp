@@ -1,12 +1,13 @@
 #include "../../../Public//Pokemon/Pokemons/Bulbasaur.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
+#include "../../../Public/Pokemon/Move.hpp"
 #include <iostream>
 using namespace std;
 
-void Bulbasaur::Attack(Pokemon* AttackedPokemon)
+void Bulbasaur::Attack(Move SelectedMove, Pokemon* AttackedPokemon)
 {
-	int damage = N_Utility::Utility::Randomize(AttackPower) + 5;
+	int damage = N_Utility::Utility::Randomize(SelectedMove.Power) + 5;
 	cout << Name << " uses Vine Whip on " << AttackedPokemon->Name << "!\n";
 	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);
@@ -15,6 +16,6 @@ void Bulbasaur::Attack(Pokemon* AttackedPokemon)
 	N_Utility::Utility::WaitForEnter();
 }
 
-Bulbasaur::Bulbasaur() : Pokemon("Bulbasaur", PokemonType::Grass, 100, 10)
+Bulbasaur::Bulbasaur() : Pokemon("Bulbasaur", PokemonType::Grass, 100, {Move("NORMAL ATTACK", 10), Move("VINE WHIP", 15), Move("SEED BOMB", 15)})
 {
 }

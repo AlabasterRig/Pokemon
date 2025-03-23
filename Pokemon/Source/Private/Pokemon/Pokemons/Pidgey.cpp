@@ -1,15 +1,16 @@
 #include "../../../Public/Pokemon/Pokemons/Pidgey.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
+#include "../../../Public/Pokemon/Move.hpp"
 #include <iostream>
 
-Pidgey::Pidgey() : Pokemon("Pidgey", PokemonType::Normal, 100, 10)
+Pidgey::Pidgey() : Pokemon("Pidgey", PokemonType::Normal, 100, {Move("NORMAL ATTACK", 10), Move("Wing Attack", 15), Move("WHIRLWIND", 15)})
 {
 }
 
-void Pidgey::Attack(Pokemon* AttackedPokemon)
+void Pidgey::Attack(Move SelectedMove, Pokemon* AttackedPokemon)
 {
-	int damage = N_Utility::Utility::Randomize(AttackPower) + 5;
+	int damage = N_Utility::Utility::Randomize(SelectedMove.Power) + 5;
 	std::cout << Name << " uses Wing Attack on " << AttackedPokemon->Name << "!\n";
 	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);

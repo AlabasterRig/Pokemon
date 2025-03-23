@@ -1,2 +1,6 @@
-﻿  BattleManager.cpp
+﻿  main.cpp
+  Bulbasaur.cpp
+  Generating Code...
+Pokemon\x64\Debug\Player.obj : warning LNK4042: object specified more than once; extras ignored
+Pokemon\x64\Debug\WildEncounterManager.obj : warning LNK4042: object specified more than once; extras ignored
   Pokemon.vcxproj -> C:\Users\utkri\source\repos\Pokemon\Pokemon\x64\Debug\Pokemon.exe

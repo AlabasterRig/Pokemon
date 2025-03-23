@@ -1,15 +1,16 @@
 #include "../../../Public/Pokemon/Pokemons/Zubat.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
+#include "../../../Public/Pokemon/Move.hpp"
 #include <iostream>
 
-Zubat::Zubat() : Pokemon("Zubat", PokemonType::Poison, 100, 20)
+Zubat::Zubat() : Pokemon("Zubat", PokemonType::Poison, 100, {Move("NORMAL ATTACK", 10), Move("SUPERSONIC", 15), Move("POISON FANG", 15)})
 {
 }
 
-void Zubat::Attack(Pokemon* AttackedPokemon)
+void Zubat::Attack(Move SelectedMove, Pokemon* AttackedPokemon)
 {
-	int damage = N_Utility::Utility::Randomize(AttackPower) + 5;
+	int damage = N_Utility::Utility::Randomize(SelectedMove.Power) + 5;
 	std::cout << Name << " uses Super Sonic on " << AttackedPokemon->Name << "!\n";
 	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);
