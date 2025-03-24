@@ -1,17 +1,23 @@
 #include "../../Public/Battle/BattleManager.hpp"
 #include "../../Public/Character/Player/Player.hpp"
+#include "../../Public/Pokemon/Pokemon.hpp"
 #include <iostream>
 using namespace std;
 
-void BattleManager::StartBattle(Player& player, Pokemon& wildPokemon)
+void BattleManager::StartBattle(Player* player, Pokemon* wildPokemon)
 {
-	CurrentBattleState.PlayerPokemon = &player.ChosenPokemon;
-	CurrentBattleState.WildPokemon = &wildPokemon;
+	CurrentBattleState.PlayerPokemon = player->ChosenPokemon;
+	CurrentBattleState.WildPokemon = wildPokemon;
 	CurrentBattleState.PlayerTurn = true;
 	CurrentBattleState.BattleOngoing = true;
 
-	cout << "A wild " << wildPokemon.Name << " appeared!\n";
-	cout << "Go " << player.ChosenPokemon.Name << "!\n";
+	cout << "A wild " << wildPokemon->Name << " appeared!\n";
+	if (CurrentBattleState.PlayerPokemon->IsFainted())
+	{
+		cout << "You don't have any Pokemon to battle with! Rush to the nearest PokeCenter to heal your Pokemon!\n";
+		return;
+	}
+	cout << "Go " << player->ChosenPokemon->Name << "!\n";
 	Battle();
 }
 
@@ -19,13 +25,17 @@ void BattleManager::Battle()
 {
 	while (CurrentBattleState.BattleOngoing)
 	{
+		if (CurrentBattleState.PlayerPokemon->IsFainted())
+		{
+			break;
+		}
 		if (CurrentBattleState.PlayerTurn)
 		{
-			CurrentBattleState.PlayerPokemon->Attack(*CurrentBattleState.WildPokemon);
+			CurrentBattleState.PlayerPokemon->SelectAndUseMove(CurrentBattleState.WildPokemon);
 		}
 		else
 		{
-			CurrentBattleState.WildPokemon->Attack(*CurrentBattleState.PlayerPokemon);
+			CurrentBattleState.WildPokemon->SelectAndUseMove(CurrentBattleState.PlayerPokemon);
 		}
 
 		UpdateBattleState();

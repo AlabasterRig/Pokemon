@@ -1,3 +1,7 @@
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
 namespace N_Utility
 {
 	class Utility
@@ -6,5 +10,7 @@ namespace N_Utility
 		static void ClearConsole();
 		static void WaitForEnter();
 		static void ClearInputBuffer();
+		static void InitRandom();
+		static int Randomize(int value);
 	};
 }

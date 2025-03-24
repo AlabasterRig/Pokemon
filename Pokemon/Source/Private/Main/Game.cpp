@@ -1,36 +1,34 @@
 #include "../../Public/Main/Game.hpp"
 #include "../../Public/Character/Player/Player.hpp"
 #include "../../Public/Utility/Utility.hpp"
-#include "../../Public/Pokemon/EPokemonType.hpp"
 #include "../../Public/Battle/WildEncounterManager.hpp"
 #include "../../Public/Battle/BattleManager.hpp"
+#include "../../Public/Pokemon/Pokemons/Caterpie.hpp"
+#include "../../Public/Pokemon/Pokemons/Pidgey.hpp"
+#include "../../Public/Pokemon/Pokemons/Zubat.hpp"
 #include <iostream>
 using namespace std;
 
 Game::Game()
 {
-	ForestGrass = {
-		{{"Pidgey", PokemonType::Normal, 10, 10}, {"Caterpie", PokemonType::Bug, 35, 10}},
-		80,
-		"Forest"
-	};
-	CaveGrass = {
-		{{"Zubat", PokemonType::Poison, 40, 10}, {"Geodude", PokemonType::Earth, 35, 10}},
-		80,
-		"Cave"
-	};
+	ForestGrass = { "Forest", {new Pidgey(), new Caterpie(), new Zubat()}, 70 };
 }
 
-void Game::GameLoop(Player& player)
+Game::~Game()
 {
-	BattleManager battleManager;
+}
+
+void Game::GameLoop(Player* player)
+{
+	BattleManager* battleManager = new BattleManager();
+	WildEncounterManager* encounterManager = new WildEncounterManager();
 	int choice;
 	bool KeepPlaying = true;
 
 	while (KeepPlaying)
 	{
 		N_Utility::Utility::ClearConsole();
-		cout << "System: What would you like to do next " << player.Name << "?\n";
+		cout << "System: What would you like to do next " << player->Name << "?\n";
 		cout << "1. Battle a wild Pokemon\n";
 		cout << "2. Visit the PokeCenter\n";
 		cout << "3. Challenge Gyms\n";
@@ -45,16 +43,15 @@ void Game::GameLoop(Player& player)
 		{
 		case 1:
 		{
-			WildEncounterManager encounterManager;
-			Pokemon wildPokemon = encounterManager.GetRandomPokemonFromGrass(ForestGrass);
-			battleManager.StartBattle(player, wildPokemon);
+			WildPokemon = encounterManager->GetRandomPokemonFromGrass(ForestGrass);
+			battleManager->StartBattle(player, WildPokemon);
 			break;
 		}
 
 		case 2:
 			cout << "System: You head towards the PokeCentre.\n";
-			player.ChosenPokemon.Heal();
-			cout << "System: Your " << player.ChosenPokemon.Name << " has been fully healed!\n";
+			player->ChosenPokemon->Heal();
+			cout << "System: Your " << player->ChosenPokemon->Name << " has been fully healed!\n";
 			break;
 
 		case 3:
@@ -84,5 +81,5 @@ void Game::GameLoop(Player& player)
 		N_Utility::Utility::WaitForEnter();
 	}
 
-	cout << "System: Thanks for playing " << player.Name << " Goodbye!\n";
+	cout << "System: Thanks for playing " << player->Name << " Goodbye!\n";
 }

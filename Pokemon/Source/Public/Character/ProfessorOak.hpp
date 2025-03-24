@@ -9,9 +9,9 @@ class ProfessorOak
 public:
 	string Name;
 
-	void GreetPlayer(Player& player);
+	void GreetPlayer();
 
-	void OfferPokemon(Player& player);
+	void OfferPokemon(Player* player);
 
-	void ExplainMainQuest(Player& player);
+	void ExplainMainQuest(Player* player);
 };

@@ -1,20 +1,23 @@
 #include "../../../Public/Character/Player/Player.hpp"
+#include "../../../Public/Pokemon/Pokemon.hpp"
 #include "../../../Public/Utility/Utility.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Pokemon/EPokemonChoice.hpp"
+#include "../../../Public/Pokemon/Pokemons/Bulbasaur.hpp"
+#include "../../../Public/Pokemon/Pokemons/Charmander.hpp"
+#include "../../../Public/Pokemon/Pokemons/Squirtle.hpp"
+#include "../../../Public/Pokemon/Pokemons/Pikachu.hpp"
 #include <iostream>
 using namespace std;
 
 
 Player::Player() {
 	Name = "Trainer";
-	ChosenPokemon = Pokemon();
 }
 
-Player::Player(string name, Pokemon chosenPokemon)
+Player::Player(string name)
 {
 	Name = name;
-	ChosenPokemon = chosenPokemon;
 }
 
 void Player::ChoosePokemon(int choice)
@@ -22,19 +25,19 @@ void Player::ChoosePokemon(int choice)
 	switch ((PokemonChoice)choice)
 	{
 	case PokemonChoice::Bulbasaur:
-		ChosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100, 10);
+		ChosenPokemon = new Bulbasaur();
 		break;
 	case PokemonChoice::Charmander:
-		ChosenPokemon = Pokemon("Charmander", PokemonType::Fire, 100, 10);
+		ChosenPokemon = new Charmander();
 		break;
 	case PokemonChoice::Squirtle:
-		ChosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100, 10);
+		ChosenPokemon = new Squirtle();
 		break;
 	default:
-		ChosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100, 10);
+		ChosenPokemon = new Pikachu();
 		break;
 	}
 
-	cout << "System: You have chosen " << ChosenPokemon.Name << " as your first Pokemon!\n";
+	cout << "System: You have chosen " << ChosenPokemon->Name << " as your first Pokemon!\n";
 	N_Utility::Utility::WaitForEnter();
 }

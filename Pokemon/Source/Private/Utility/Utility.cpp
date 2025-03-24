@@ -22,4 +22,15 @@ namespace N_Utility
     void Utility::ClearInputBuffer() {
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
+
+    void Utility::InitRandom()
+    {
+        srand(time(0));
+    }
+
+    int Utility::Randomize(int value)
+    {
+        int RandomNumber = rand() % value;
+        return RandomNumber;
+    }
 }
