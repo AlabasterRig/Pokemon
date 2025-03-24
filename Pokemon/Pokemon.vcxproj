@@ -171,6 +171,7 @@
     <ClCompile Include="Source\Private\Pokemon\Pokemons\Charmander.cpp" />
     <ClCompile Include="Source\Private\Pokemon\Pokemons\Squirtle.cpp" />
     <ClCompile Include="Source\Private\Pokemon\Pokemons\Bulbasaur.cpp" />
+    <ClCompile Include="Source\Private\Pokemon\Status Effects\ParalyzedEffect.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -185,7 +186,8 @@
     <ClInclude Include="Source\Public\Pokemon\EPokemonType.hpp" />
     <ClInclude Include="Source\Public\Pokemon\FGrass.hpp" />
     <ClInclude Include="Source\Public\Main\Game.hpp" />
-    <ClInclude Include="Source\Public\Pokemon\Move.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Status Effects\IStatusEffect.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\FMove.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemon.hpp" />
     <ClInclude Include="Source\Public\Character\ProfessorOak.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Bulbasaur.hpp" />
@@ -195,6 +197,7 @@
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Pikachu.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Squirtle.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemons\Zubat.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Status Effects\ParalyzedEffect.hpp" />
     <ClInclude Include="Source\Public\Utility\Utility.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
