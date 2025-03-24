@@ -11,7 +11,6 @@ Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::Bug, 100, {Move("NORMAL 
 void Caterpie::Attack(Move SelectedMove, Pokemon* AttackedPokemon)
 {
 	int damage = N_Utility::Utility::Randomize(SelectedMove.Power) + 5;
-	std::cout << Name << " uses Tackle on " << AttackedPokemon->Name << "!\n";
 	N_Utility::Utility::WaitForEnter();
 	AttackedPokemon->TakeDamage(damage);
 	std::cout << AttackedPokemon->Name << " took " << damage << " damage!\n";

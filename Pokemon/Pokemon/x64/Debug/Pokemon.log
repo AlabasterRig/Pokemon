@@ -1,5 +1,9 @@
-﻿  main.cpp
-  Bulbasaur.cpp
+﻿  Caterpie.cpp
+  Charmander.cpp
+  Pidgey.cpp
+  Pikachu.cpp
+  Squirtle.cpp
+  Zubat.cpp
   Generating Code...
 Pokemon\x64\Debug\Player.obj : warning LNK4042: object specified more than once; extras ignored
 Pokemon\x64\Debug\WildEncounterManager.obj : warning LNK4042: object specified more than once; extras ignored

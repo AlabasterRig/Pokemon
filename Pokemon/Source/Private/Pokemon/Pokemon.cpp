@@ -93,7 +93,7 @@ int Pokemon::SelectMove()
 
 void Pokemon::UsedMove(Move SelectedMove, Pokemon* target)
 {
-	cout << Name << " used " << SelectedMove.Name << "!\n";
+	cout << Name << " used " << SelectedMove.Name << " on " << target->Name << "\n";
 	Attack(SelectedMove, target);
 	N_Utility::Utility::WaitForEnter();
 	cout << "...\n";
