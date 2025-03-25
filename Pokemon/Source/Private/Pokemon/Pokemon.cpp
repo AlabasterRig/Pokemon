@@ -1,7 +1,8 @@
 #include "../../Public/Pokemon/Pokemon.hpp"
 #include "../../Public/Pokemon/EPokemonType.hpp"
 #include "../../Public/Utility/Utility.hpp"
-#include "../../Public/Pokemon/Move.hpp"
+#include "../../Public/Pokemon/FMove.hpp"
+#include "../../Public/Pokemon/Status Effects/ParalyzedEffect.hpp"
 #include <string>
 #include <iostream>
 using namespace std;
@@ -115,4 +116,39 @@ void Pokemon::SelectAndUseMove(Pokemon* TargetPokemon)
 
 	// Execute the move
 	UsedMove(selectedMove, TargetPokemon);
+}
+
+bool Pokemon::CanAttack()
+{
+	if (AppliedEffect == nullptr)
+	{
+		return true;
+	}
+	else
+	{
+		return AppliedEffect->TurnEndEffect(this);
+	}
+}
+
+void Pokemon::ClearEffect()
+{
+	AppliedEffect = nullptr;
+}
+
+bool Pokemon::CanApplyEffect()
+{
+	return { AppliedEffect == nullptr };
+}
+
+void Pokemon::ApplyEffect(EStatusEffectType EffectToApply)
+{
+	switch (EffectToApply)
+	{
+	case EStatusEffectType::PARALYZED:
+		AppliedEffect = new ParalyzedEffect();
+		AppliedEffect->ApplyEffect(this);
+		break;
+	default:
+		AppliedEffect = nullptr;
+	}
 }

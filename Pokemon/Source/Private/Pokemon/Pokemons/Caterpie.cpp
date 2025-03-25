@@ -1,7 +1,7 @@
 #include "../../../Public/Pokemon/Pokemons/Caterpie.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
-#include "../../../Public/Pokemon/Move.hpp"
+#include "../../../Public/Pokemon/FMove.hpp"
 #include <iostream>
 
 Caterpie::Caterpie() : Pokemon("Caterpie", PokemonType::Bug, 100, {Move("NORMAL ATTACK", 10), Move("TACKLE", 15), Move("STRING SHOT", 15)})

@@ -1,7 +1,7 @@
 #include "../../../Public/Pokemon/Pokemons/Zubat.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
-#include "../../../Public/Pokemon/Move.hpp"
+#include "../../../Public/Pokemon/FMove.hpp"
 #include <iostream>
 
 Zubat::Zubat() : Pokemon("Zubat", PokemonType::Poison, 100, {Move("NORMAL ATTACK", 10), Move("SUPERSONIC", 15), Move("POISON FANG", 15)})

@@ -1,7 +1,7 @@
 #include "../../../Public//Pokemon/Pokemons/Bulbasaur.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
-#include "../../../Public/Pokemon/Move.hpp"
+#include "../../../Public/Pokemon/FMove.hpp"
 #include <iostream>
 using namespace std;
 
