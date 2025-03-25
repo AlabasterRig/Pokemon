@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../Pokemon/Status Effects/IStatusEffect.hpp"
+#include "../Pokemon/Status Effects/EStatusEffectType.hpp"
 #include <string>
 #include <vector>
 using namespace std;
@@ -16,6 +18,7 @@ public:
 	int MaxHealth = 100;
 	int AttackPower = 10;
 	vector<Move> Moves;
+	IStatusEffect* AppliedEffect;
 
 	Pokemon();
 
@@ -30,6 +33,10 @@ public:
 	bool IsFainted() const;
 	void Heal();
 	void SelectAndUseMove(Pokemon* TargetPokemon);
+	bool CanAttack();
+	void ClearEffect();
+	bool CanApplyEffect();
+	void ApplyEffect(EStatusEffectType EffectToApply);
 
 protected:
 	void PrintAvailableMoves();

@@ -1,7 +1,7 @@
 #include "../../../Public/Pokemon/Pokemons/Pidgey.hpp"
 #include "../../../Public/Pokemon/EPokemonType.hpp"
 #include "../../../Public/Utility/Utility.hpp"
-#include "../../../Public/Pokemon/Move.hpp"
+#include "../../../Public/Pokemon/FMove.hpp"
 #include <iostream>
 
 Pidgey::Pidgey() : Pokemon("Pidgey", PokemonType::Normal, 100, {Move("NORMAL ATTACK", 10), Move("Wing Attack", 15), Move("WHIRLWIND", 15)})

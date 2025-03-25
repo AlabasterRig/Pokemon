@@ -128,5 +128,8 @@
     <ClInclude Include="Source\Public\Pokemon\Status Effects\ParalyzedEffect.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Public\Pokemon\Status Effects\EStatusEffectType.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

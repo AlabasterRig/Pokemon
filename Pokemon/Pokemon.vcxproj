@@ -186,6 +186,7 @@
     <ClInclude Include="Source\Public\Pokemon\EPokemonType.hpp" />
     <ClInclude Include="Source\Public\Pokemon\FGrass.hpp" />
     <ClInclude Include="Source\Public\Main\Game.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Status Effects\EStatusEffectType.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Status Effects\IStatusEffect.hpp" />
     <ClInclude Include="Source\Public\Pokemon\FMove.hpp" />
     <ClInclude Include="Source\Public\Pokemon\Pokemon.hpp" />
