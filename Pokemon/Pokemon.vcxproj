@@ -154,15 +154,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Source\Private\Battle\BattleManager.cpp" />
+    <ClCompile Include="Source\Private\Main\Game.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Player.hpp" />
-    <ClCompile Include="Pokemon.cpp" />
-    <ClCompile Include="ProfessorOak.cpp" />
-    <ClCompile Include="Utility.cpp" />
-    <ClCompile Include="WildEncounterManager.cpp" />
-    <ClCompile Include="WildEncounterManager.hpp" />
+    <ClCompile Include="Source\Private\Character\Player\Player.cpp" />
+    <ClCompile Include="Source\Public\Character\Player\Player.hpp" />
+    <ClCompile Include="Source\Private\Pokemon\Pokemon.cpp" />
+    <ClCompile Include="Source\Private\Character\ProfessorOak.cpp" />
+    <ClCompile Include="Source\Private\Utility\Utility.cpp" />
+    <ClCompile Include="Source\Private\Battle\WildEncounterManager.cpp" />
+    <ClCompile Include="Source\Public\Battle\WildEncounterManager.hpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".idea\.idea.Pokemon\.idea\indexLayout.xml" />
@@ -171,13 +172,15 @@
     <Content Include="Pokemon.vcxproj.filters" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="EPokemonChoice.hpp" />
-    <ClInclude Include="EPokemonType.hpp" />
-    <ClInclude Include="FGrass.hpp" />
-    <ClInclude Include="Game.hpp" />
-    <ClInclude Include="Pokemon.hpp" />
-    <ClInclude Include="ProfessorOak.hpp" />
-    <ClInclude Include="Utility.hpp" />
+    <ClInclude Include="Source\Public\Battle\BattleManager.hpp" />
+    <ClInclude Include="Source\Public\Battle\FBattleState.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\EPokemonChoice.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\EPokemonType.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\FGrass.hpp" />
+    <ClInclude Include="Source\Public\Main\Game.hpp" />
+    <ClInclude Include="Source\Public\Pokemon\Pokemon.hpp" />
+    <ClInclude Include="Source\Public\Character\ProfessorOak.hpp" />
+    <ClInclude Include="Source\Public\Utility\Utility.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,9 +1,8 @@
-#include "Player.hpp"
-#include "Game.hpp"
-#include "EPokemonChoice.hpp"
-#include "EPokemonType.hpp"
-#include "ProfessorOak.hpp"
-#include "Utility.hpp"
+#include "../Pokemon/Source/Public/Character/Player/Player.hpp"
+#include "../Pokemon/Source/Public/Main/Game.hpp"
+#include "../Pokemon/Source/Public/Pokemon/EPokemonType.hpp"
+#include "../Pokemon/Source/Public/Character/ProfessorOak.hpp"
+#include "../Pokemon/Source/Public/Utility/Utility.hpp"
 #include <iostream>
 #include <limits>
 #include <string>

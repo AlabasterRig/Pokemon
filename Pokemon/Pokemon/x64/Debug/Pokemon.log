@@ -1,13 +1,9 @@
-﻿  Game.cpp
-  main.cpp
+﻿  BattleManager.cpp
   Player.cpp
-  Player.hpp
-  Pokemon.cpp
   ProfessorOak.cpp
+  Game.cpp
   Utility.cpp
-  WildEncounterManager.cpp
-C:\Users\utkri\source\repos\Pokemon\Pokemon\WildEncounterManager.cpp(9,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  WildEncounterManager.hpp
+  Player.hpp
   Generating Code...
 Pokemon\x64\Debug\Player.obj : warning LNK4042: object specified more than once; extras ignored
 Pokemon\x64\Debug\WildEncounterManager.obj : warning LNK4042: object specified more than once; extras ignored
