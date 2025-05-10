@@ -1,0 +1,18 @@
+#include <string>
+#include "Pokemon.hpp"
+using namespace std;
+
+class Pokemon;
+
+class Player
+{
+public:
+	string Name;
+	Pokemon ChosenPokemon;
+
+	Player();
+
+	Player(string name, Pokemon chosenPokemon);
+
+	void ChoosePokemon(int choice);
+};
